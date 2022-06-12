@@ -1,14 +1,16 @@
 .about {
     display: flex;
-
-    .elemento{
-        width:50%;
-    }
-    .api{
+    .element{
+      
         padding-left: 5%;
         margin: 20px;
+        width: 50%;
     }
-    .me {
-       
+
+    h2 {
+        padding: 10px;
+    }
+    .api{
+        padding-bottom: 5%;
     }
 }
