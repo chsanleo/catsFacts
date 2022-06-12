@@ -23,7 +23,7 @@ class ErrorPage extends React.Component {
         }
         return (
             <div align="center">
-                <img src="https://img.lovepik.com/element/40021/7866.png_1200.png" alt="Lost404"/>
+                <img src="https://onefid.com/wp-content/uploads/2019/03/404@3x.png" alt="Lost404"/>
                 <h3>Opps... </h3>
             </div>
             
