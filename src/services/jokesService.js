@@ -1,5 +1,5 @@
 import { jokesRepository } from '../repositories/jokesRepository';
-import {addJokes} from '../redux/actions/jokes.js';
+import { addJokes } from '../redux/actions/jokes.js';
 
 export const jokesService ={
     getJokes
