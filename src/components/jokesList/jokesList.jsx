@@ -2,6 +2,10 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 
+import PROPERTIES from '../../config/properties.js';
+
+import './jokesList.scss';
+
 class JokesList extends React.Component {
 
     showjoke(joke){
@@ -9,16 +13,17 @@ class JokesList extends React.Component {
     }
 
     render() {
-        return(<div>
-            
-           { this.props.jokesList?.map(joke => ( 
-              <div>
-                  {this.showjoke(joke)}
-              </div>
-              ))
-            }
-
-        </div>);
+        return(
+            <div className='jokesBlock'>
+                <h2>Best {PROPERTIES.Amount} jokes! </h2>
+                { this.props.jokesList?.map(joke => ( 
+                    <div className='listOfJokes'>
+                        <li>{this.showjoke(joke)}</li>
+                    </div>
+                 ))
+                }
+            </div>
+        );
     };
 
 };
