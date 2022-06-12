@@ -1,10 +1,10 @@
 .comp-Header {
     height: 5em;
     background-color: var(--background-color);
+    color: var(--text-with-back-color);
     display: flex;
     justify-content: space-between;
     align-content: center;
-    color: whitesmoke;
     padding: 1em;
 
     .list-icons {
