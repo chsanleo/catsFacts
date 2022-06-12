@@ -1,5 +1,6 @@
 import React from 'react';
 
+
 import {jokesService} from '../../services/jokesService.js';
 
 class Landing extends React.Component {
@@ -15,4 +16,5 @@ class Landing extends React.Component {
         </div>);
     };
 };
+
 export default Landing;
