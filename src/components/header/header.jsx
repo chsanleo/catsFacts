@@ -17,7 +17,7 @@ class Header extends React.Component {
             <header>
                 <div>
                     <li>
-                        <Link to="/" >Cat Facts!</Link>
+                        <Link to='/' className="accesos">Jokes!</Link>
                     </li>
                 </div>
             </header>
