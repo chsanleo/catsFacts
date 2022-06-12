@@ -1,0 +1,45 @@
+.jokes {
+
+    button {
+        margin-left: 30%;
+        background-color: var(--background-color);
+        border: 0 solid #ffffff;
+        box-sizing: border-box;
+        display: flex;
+        font-size: 1rem;
+        font-weight: 700;
+        justify-content: center;
+        line-height: 1.75rem;
+        padding: .75rem 1.65rem;
+        position: relative;
+        text-align: center;
+        width: 100%;
+        max-width: 460px;
+        position: relative;
+        cursor: pointer;
+        transform: rotate(-2deg);
+        user-select: none;
+        -webkit-user-select: none;
+        touch-action: manipulation;
+    }
+
+    .button:focus {
+        outline: 0;
+    }
+  
+    .button:after {
+        content: '';
+        position: absolute;
+        border: 1px solid #000000;
+        bottom: 4px;
+        left: 4px;
+        width: calc(100% - 1px);
+        height: calc(100% - 1px);
+    }
+  
+    .button:hover:after {
+        bottom: 2px;
+        left: 2px;
+    }
+  
+}
