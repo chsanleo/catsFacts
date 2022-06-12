@@ -6,7 +6,7 @@ export const factsCatRepository = {
     getFactsCat
 };
 
-let baseUrl = APIs.FACTSCAT_API;
+let baseUrl = APIs.FACTSCAT_API+'/facts';
 
 async function getFactsCat() {
     try {
