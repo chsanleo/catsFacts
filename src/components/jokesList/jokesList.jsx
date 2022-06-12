@@ -2,6 +2,8 @@ import React from 'react';
 
 import { connect } from 'react-redux';
 
+import './jokesList.scss';
+
 class JokesList extends React.Component {
 
     showjoke(joke){
@@ -9,16 +11,16 @@ class JokesList extends React.Component {
     }
 
     render() {
-        return(<div>
-            
+        return(
+            <div className='jokesBlock'>
            { this.props.jokesList?.map(joke => ( 
-              <div>
-                  {this.showjoke(joke)}
+                    <div className='listOfJokes'>
+                        <li>{this.showjoke(joke)}</li>
               </div>
               ))
             }
-
-        </div>);
+            </div>
+        );
     };
 
 };
