@@ -1,6 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
+import { utils } from '../../utils/utils.js';
 import APIs from '../../config/api.js';
 
 import './about.scss'
@@ -14,7 +15,7 @@ class About extends React.Component {
                 {this.props.jokesList?
                     <div className='api'><li>Thanks to the API: <a href={APIs.JOKES_API} target="_blank" rel="noreferrer">{APIs.JOKES_API}</a></li></div>
                     :<div></div>}
-                {this.props.factsCatList?
+                {!utils.isEmptyObject(this.props.factsCatList)?
                     <div className='api'><li>Thanks to the API: <a href={APIs.FACTSCAT_API} target="_blank" rel="noreferrer">{APIs.FACTSCAT_API}</a></li></div>
                     :<div></div>}
                     </div>
