@@ -14,11 +14,16 @@ class Header extends React.Component {
 
     render() {
         return (
-            <header>
+            <header className="comp-Header">
                 <div>
+                    <ul className="list-icons">
                     <li>
-                        <Link to="/" >Cat Facts!</Link>
+                        <Link to='/about' className="accesos">About</Link>
                     </li>
+                    <li>
+                        <Link to='/' className="accesos">Jokes!</Link>
+                    </li>
+                    </ul>
                 </div>
             </header>
         );
