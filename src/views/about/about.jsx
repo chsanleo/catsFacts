@@ -21,5 +21,10 @@ class About extends React.Component {
         );
     };
 };
-const mapStateToProps = ({jokes}) => ({jokesList: jokes.jokesList.jokes})
+const mapStateToProps = ({
+    jokes, factsCat
+}) => ({
+    jokesList: jokes.jokesList?.jokes,
+    factsCatList: factsCat.factsCatList
+})
 export default connect(mapStateToProps)(About);
