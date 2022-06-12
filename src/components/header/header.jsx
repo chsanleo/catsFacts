@@ -11,9 +11,9 @@ class Header extends React.Component {
             <header className="comp-Header">
                 <ul className="list-icons">
                     {this.props.jokesList?
-                        <li> <Link to='/jokes' className="accesos">Jokes!</Link> </li>
+                        <li> <Link to='/jokes'>Jokes!</Link> </li>
                         :<li></li>}
-                    <li> <Link to='/about' className="accesos">About</Link> </li>
+                    <li> <Link to='/about'>About</Link> </li>
                 </ul>
             </header>
         );
