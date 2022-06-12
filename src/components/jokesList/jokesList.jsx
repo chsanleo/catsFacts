@@ -16,5 +16,5 @@ class JokesList extends React.Component {
 
 };
 
-const mapStateToProps = ({jokes}) => ({jokesList: jokes.jokesList})
+const mapStateToProps = ({jokes}) => ({jokesList: jokes.jokesList.jokes})
 export default connect(mapStateToProps)(JokesList);
