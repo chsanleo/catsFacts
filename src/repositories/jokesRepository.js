@@ -11,6 +11,6 @@ async function getJokes() {
         return res.data;
     }
     catch (error) {
-        throw Error("Error back updateContactUs.");
+        throw Error("Error connect API");
     }
 };
