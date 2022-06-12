@@ -1,5 +1,5 @@
 import React from 'react';
-import { Redirect } from 'react-router-dom';
+import { Navigate } from 'react-router-dom';
 
 
 class ErrorPage extends React.Component {
@@ -18,7 +18,7 @@ class ErrorPage extends React.Component {
     render() {
         if (this.state.redirect) {
             return (
-                <Redirect to={'/'} />
+                <Navigate to={'/'} />
             )
         }
         return (
