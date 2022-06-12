@@ -15,7 +15,7 @@ export const delJokes = async () => {
     try {
         store.dispatch({
             type: ADD_JOKES,
-            payload: ''
+            payload: { }
         });
     } catch (error) {
         console.error(error);
