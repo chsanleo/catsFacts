@@ -3,11 +3,18 @@ import React from 'react';
 import { connect } from 'react-redux';
 
 class JokesList extends React.Component {
+
+    showjoke(joke){
+        return joke.setup!= undefined? joke.setup +" , " +joke.delivery : joke.joke;
+    }
+
     render() {
         return(<div>
             
-           { this.props.jokesList?.map(jokes => ( 
-              <div> {jokes.setup} : {jokes.delivery } </div>
+           { this.props.jokesList?.map(joke => ( 
+              <div>
+                  {this.showjoke(joke)}
+              </div>
               ))
             }
 
