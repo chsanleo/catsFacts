@@ -17,7 +17,7 @@ class JokesList extends React.Component {
             <div className='jokesBlock'>
                 <h2>Best {PROPERTIES.Amount} jokes! </h2>
                 { this.props.jokesList?.map(joke => ( 
-                    <div className='listOfJokes'>
+                    <div key ={joke.id} className='listOfJokes'>
                         <li>{this.showjoke(joke)}</li>
                     </div>
                  ))
