@@ -9,7 +9,7 @@ import './jokesList.scss';
 class JokesList extends React.Component {
 
     showjoke(joke){
-        return joke.setup != undefined ? joke.setup +" , " +joke.delivery : joke.joke;
+        return joke.setup !== undefined ? joke.setup +" , " +joke.delivery : joke.joke;
     }
 
     render() {
