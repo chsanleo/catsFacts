@@ -1,3 +1,6 @@
-let API_URL_JOKES = 'http://localhost:3000/';
+const APIs = {
+    JOKES_API:'http://localhost:3000/',
+    FACTSCAT_API :'http://localhost:3000/'
+};
 
-export default API_URL_JOKES;
+export default APIs;
