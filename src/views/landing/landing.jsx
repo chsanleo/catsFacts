@@ -9,10 +9,9 @@ class Landing extends React.Component {
         jokesService.getJokes();
     }
     render() {
-        return(<div align="center">
-            
-            Welcome
-
+        return(
+        <div align="center">
+            <h2>Welcome</h2>
         </div>);
     };
 };
