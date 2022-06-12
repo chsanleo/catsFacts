@@ -10,7 +10,7 @@ class About extends React.Component {
         return(
             <div className='about'>
                 {this.props.jokesList?
-                    <div className={'api '+'elemento'}><h2>APIs:</h2><li>Thanks to the API: <a href={API_URL_JOKES} target="_blank">{API_URL_JOKES}</a></li></div>
+                    <div className='api'><li>Thanks to the API: <a href={APIs.JOKES_API} target="_blank" rel="noreferrer">{APIs.JOKES_API}</a></li></div>
                     :<div className={'api '+'elemento'}></div>}
                 <div className={'me '+'elemento'}>
                     <h2> About me</h2>
