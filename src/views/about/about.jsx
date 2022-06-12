@@ -1,7 +1,7 @@
 import React from 'react';
 import { connect } from 'react-redux';
 
-import API_URL_JOKES from '../../config/api';
+import APIs from '../../config/api.js';
 
 import './about.scss'
 
