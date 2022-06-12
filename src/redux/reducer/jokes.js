@@ -1,7 +1,7 @@
 import { ADD_JOKES } from '../types/jokes.js';
 
 const initialState = {
-    jokesList: ''
+    jokesList: { }
 };
 
 export default function reducer(state = initialState, action) {
