@@ -17,12 +17,8 @@ class Header extends React.Component {
             <header className="comp-Header">
                 <div>
                     <ul className="list-icons">
-                    <li>
-                        <Link to='/about' className="accesos">About</Link>
-                    </li>
-                    <li>
-                        <Link to='/' className="accesos">Jokes!</Link>
-                    </li>
+                        <li> <Link to='/jokes' className="accesos">Jokes!</Link> </li>
+                        <li> <Link to='/about' className="accesos">About</Link> </li>
                     </ul>
                 </div>
             </header>
